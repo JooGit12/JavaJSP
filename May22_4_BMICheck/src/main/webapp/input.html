@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bc.css">
+<script type="text/javascript" src="js/kwonValidChecker.js"></script>
+<script type="text/javascript" src="js/bcCheck.js"></script>
+</head>
+<body>
+	<form action="HomeController" method="post" 
+		enctype="multipart/form-data"
+		name="bcForm" onsubmit="return bcCheck();">
+		<table>
+			<tr>
+				<th>BMI</th>
+			</tr>
+			<tr>
+				<td align="center"><input name="n" placeholder="이름"></td>
+			</tr>
+			<tr>
+				<td align="center"><input name="h" placeholder="키"></td>
+			</tr>
+			<tr>
+				<td align="center"><input name="w" placeholder="몸무게"></td>
+			</tr>
+			<tr>
+				<td align="center"><input name="p" type="file"></td>
+			</tr>
+			<tr>
+				<td align="center">
+					<button>확인</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

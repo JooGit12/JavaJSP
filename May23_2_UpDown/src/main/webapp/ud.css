@@ -1,0 +1,27 @@
+@charset "EUC-KR";
+table{
+	background-color: #1976D2;	color: white;
+	margin-left: auto;		margin-right: auto;
+	width: 250px;			border-spacing: 0px;
+}
+th{
+	font-size:20pt;			height: 60px;
+}
+td{
+	background-color: #90CAF9; 
+}
+input{
+	width: 200px;	height: 40px;
+	margin: 10px;	border: #1976D2 solid 3px;
+	color: #1976D2;	font-size: 15pt;
+	text-align: center;	font-weight: 700;
+}
+button{
+	border: none;		font-size: 17pt;
+	font-weight: 900;	color: #1976D2;
+	background-color: transparent;
+}
+#resultTd{
+	height: 50px;
+	text-shadow: 1px 1px 1px black;
+}

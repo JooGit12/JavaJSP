@@ -1,0 +1,8 @@
+package com.kwon.apr203oe.menu;
+
+public class test {
+	public static void main(String[] args) {
+		Menu m = new Menu();
+		Menu m2 = new Menu("신발", 20000, false); 
+	}
+}

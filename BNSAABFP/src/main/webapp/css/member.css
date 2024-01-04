@@ -1,0 +1,130 @@
+@charset "EUC-KR";
+#loginTbl {
+	margin:10px;
+	width: 90%;
+	padding-bottom:7px;
+	border-bottom:#ECEFF1 dashed 3px;
+}
+#loginTbl input{
+	width: 90%;
+	height: 35px;
+	background-color: transparent;
+	border:#ECEFF1 solid 3px;
+	font-size: 13pt;
+	color:#ECEFF1;
+	padding: 7px;
+}
+#loginTbl button, #loginTbl a {
+	color:#ECEFF1;
+	font-family: "americano";
+	font-size: 13pt;
+	margin: 10px;
+}
+#loginTbl button{
+	background-color: transparent;
+	border:none;
+}
+#joinTbl{
+	width: 500px;
+	color:#ECEFF1;
+	font-family: "americano";
+	font-size: 16pt;
+}
+#joinTbl th{
+	color:#ECEFF1;
+	font-family: "americano";
+	font-size: 20pt;
+	height: 60px;
+	text-shadow: 3px 3px 3px #37474F;
+}
+#joinTbl .boxType{
+	color:#ECEFF1;
+	font-size: 16pt;
+	height: 30px;
+	background-color: #37474FAA;
+	width: 80%;
+	padding: 10px;
+	margin: 5px;
+	border:#ECEFF1 solid 3px;
+}
+
+#joinTbl .selectType{
+	color:#ECEFF1;
+	font-size: 14pt;
+	height: 50px;
+	width:75px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+	background-color: #37474FAA;
+	border:#ECEFF1 solid 3px;
+}
+#joinTbl .boxType2{
+	color:#ECEFF1;
+	font-size: 14pt;
+	height: 30px;
+	background-color: #37474FAA;
+	width: 70%;
+	padding: 10px;
+	margin: 5px;
+	border:#ECEFF1 solid 3px;
+}
+#joinTbl .boxType3{
+	text-align:center;
+	color:#ECEFF1;
+	font-size: 20pt;
+	height: 30px;
+	background-color: transparent;
+	text-shadow:3px 3px 3px #37474F;
+	width: 80%;
+	padding: 10px;
+	margin: 5px;
+	border:none;
+}
+#joinTbl .boxType4{
+	color:#ECEFF1;
+	font-size: 15pt;
+	background-color: transparent;
+	width: 80%;
+	border:none;
+}
+#joinTbl button{
+	background-color:#ECEFF1AA;
+	font-family: "americano";
+	font-size: 17pt;
+	font-weight:900;
+	height: 70px;
+	color: #37474F;
+	width: 85%;
+	margin: 5px;
+	padding:10px;
+	border:#ECEFF1 solid 3px;
+}
+#pSa{
+	width: 60px;
+	padding-bottom: 10px;
+}
+#pSa img{
+	max-width: 55px;
+	border-radius: 7px;
+}
+#loginID{
+	padding-left:10px;
+	font-family: "golmokgil";
+}
+#loginName{
+	padding-left:20px;
+	font-family: "golmokgil";
+}
+#pSaUpdateTbl{
+	border:#ECEFF1 solid 3px;
+	width: 85%;
+	background-color: #37474FAA;
+	padding: 5px;
+}
+#pSaUpdateTbl .td2{
+	width: 85%;
+}
+#pSaUpdateTbl img{
+	max-width: 90%;
+}

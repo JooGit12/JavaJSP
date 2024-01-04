@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/kwonValidChecker.js"></script>
+<script type="text/javascript" src="js/ucCheck.js"></script>
+</head>
+<body>
+	<form action="ucOutput.jsp" name="ucForm" onsubmit="return check();">
+		<input name="no" autofocus="autofocus"><br>
+		<select name="what"> 
+			<option value="len">cm → inch</option>
+			<option value="size">㎡ → 평</option>
+			<option value="temp">℃ → ℉</option>
+			<option value="spd">km/h → mi/h</option>
+		</select><br>
+		<button>변환</button>
+	</form>
+</body>
+</html>
+
+
+
+
+

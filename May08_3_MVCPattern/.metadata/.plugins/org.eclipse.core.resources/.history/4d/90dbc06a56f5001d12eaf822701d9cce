@@ -1,0 +1,5 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: "ha";
+	src: url("hahahaha.ttf");
+}

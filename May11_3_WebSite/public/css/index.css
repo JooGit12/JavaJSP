@@ -1,0 +1,52 @@
+@charset "EUC-KR";
+
+@font-face {
+	font-family: "sejongggg";
+	src: url("sejong.ttf");
+}
+
+#siteArea {
+	/* 가운데정렬 */
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+#siteTitle {
+	font-family: "sejongggg";
+	color: #FFD54F;
+	text-shadow: 4px 4px 3px #E65100;
+	font-size: 40pt;
+	padding-left: 20px;
+	height: 130px;
+	font-weight: 900;
+	color: #FFD54F; /* 굵게 */
+}
+
+#siteMenuArea {
+	border-top: #E65100 solid 2px;
+	border-bottom: #E65100 solid 2px;
+	height: 35px;
+}
+
+#siteMenuArea a {
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: "sejongggg";
+	font-weight: 800;
+}
+
+#siteMenuArea a:hover {
+	text-shadow: 0px 0px 3px #E65100;
+}
+
+#siteContentArea {
+	padding-top: 50px;
+}
+
+#homeImg {
+	width: 30%;
+	box-shadow: 3px 3px 3px black;
+}

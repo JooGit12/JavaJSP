@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+.aMenu {
+	width: 300px;
+	box-shadow: 3px 3px 3px black;
+	margin:30px;
+	float: left; /* °ÝÀÚÇü */
+}
+.aMenu img{
+	max-width: 280px;
+}
+.aMenu .td1, .aMenu th{
+	padding: 10px;
+}

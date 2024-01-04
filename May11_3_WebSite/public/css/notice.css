@@ -1,0 +1,32 @@
+@charset "EUC-KR";
+
+#noticeBBS {
+	width: 800px;	box-shadow: 3px 3px 3px black;
+	background-color: #E65100;
+	color: white;
+	font-family: "sejongggg";
+	border-spacing: 0px; /* td간의 간격 */
+}
+#noticeBBS .th1 {
+	width: 60px;	height: 30px;
+}
+#noticeBBS .th2 {
+	width: 600px;
+}
+#noticeBBS td {
+	border-bottom: #E65100 solid 1px;	height: 33px;
+}
+#noticeBBS .dataTr {
+	background-color: white;	color: black;
+	font-family: "맑은고딕";	cursor: pointer;
+							/* ease-in ease-out linear */
+				/* 속성명 시간 속도조절 */
+	transition: all 0.3s ease-out;
+	/* CSS3에 추가 -> IE에서는... */
+}
+#noticeBBS .dataTr:hover {
+	background-color: #CFD8DC;
+}
+
+
+

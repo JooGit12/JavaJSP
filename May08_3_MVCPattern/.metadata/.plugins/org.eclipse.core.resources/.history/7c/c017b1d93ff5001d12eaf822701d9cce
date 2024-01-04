@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="ucOutput.jsp">
+		<input name="no">
+		<select name="what">
+			<option>cm -> inch</option>
+			<option>㎥ -> 평</option>
+			<option>℃ -> ℉</option>
+			<option>km/h -> mi/h</option>
+		</select>
+		<button>변환</button>
+	</form>
+</body>
+</html>

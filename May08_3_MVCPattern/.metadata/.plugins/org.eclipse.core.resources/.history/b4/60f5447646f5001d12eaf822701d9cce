@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	double n = Double.parseDouble(request.getParameter("no"));
+	String w = request.getParameter("what");
+
+	double result = n * 0.621371;
+	if (w.equals("len")) {
+		result = n * 0.393701;
+	} else if (w.equals("size")) {
+		result = n * 0.3025;
+	} else if (w.equals("temp")) {
+		result = (n * (9 / 5)) + 32;
+	}
+	%>
+	
+	<%=n %><br>
+	↓<br>
+	<%=result %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

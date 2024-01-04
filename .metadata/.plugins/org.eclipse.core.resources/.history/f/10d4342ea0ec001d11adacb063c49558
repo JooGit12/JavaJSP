@@ -1,0 +1,14 @@
+import java.util.UUID;
+
+public class ss {
+	public static void main(String[] args) {
+		   // 랜덤 UUID 생성
+	    UUID uuid1 = UUID.randomUUID();
+	    System.out.println("Random UUID: " + uuid1);
+
+	    // 이름 기반 UUID 생성
+	    String name = "example-name";
+	    UUID uuid2 = UUID.nameUUIDFromBytes(name.getBytes());
+	    System.out.println("Name-based UUID: " + uuid2);
+	}
+}

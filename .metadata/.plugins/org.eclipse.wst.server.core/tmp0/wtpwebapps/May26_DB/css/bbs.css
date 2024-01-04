@@ -1,0 +1,61 @@
+@charset "EUC-KR";
+#bbsArea{
+	width: 90%;
+}
+.bbsGo{
+	font-size: 15pt;	color:black;
+	margin-right: 50px;
+}
+#bbsWriteTbl{
+	width: 60%;
+	background-color: #E0F7FA;
+	box-shadow: 3px 3px 3px #00ACC1;
+}
+#bbsWriteTbl td{
+	padding: 10px;
+}
+#bbsWriteTbl input{
+	width: 90%;		height: 40px;
+	border:#00ACC1 solid 3px;
+	font-family: "ha";	outline:none;
+	padding: 5px;	font-size: 14pt;
+}
+#bbsWriteTbl textarea{
+	resize: none;	width: 90%;		height: 240px;
+	border:#00ACC1 solid 3px;	font-family: "ha";
+	outline:none; 	padding: 5px;	font-size: 14pt;
+}
+#bbsWriteTbl button{
+	border:none;	background-color: transparent;
+	color:#00ACC1;	font-size: 20pt;
+	font-family: "ha";
+}
+#bbs{
+	width: 90%;		background-color:#00ACC1;
+	color:white;	font-size: 14pt;
+	box-shadow: 2px 2px 2px black;
+	margin: 20px;
+}
+#bbs .td1{
+	width: 70px;	height: 40px;
+}
+#bbs .td2{
+	width: 730px;
+}
+#bbs .dataTr{
+	background-color: white;	cursor:pointer;
+	color:black;	height: 35px;
+}
+#bbs .dataTr:hover{
+	background-color: #B2EBF2;
+}
+
+.bbsPageChanger{
+	font-size: 15pt;
+	font-weight: 900;
+	color:#00ACC1;	
+	margin-left: 10px;	margin-right: 10px;
+}
+
+
+

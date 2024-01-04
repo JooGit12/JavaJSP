@@ -1,0 +1,122 @@
+@charset "EUC-KR";
+#snsWriteTbl{
+	position: fixed;
+	/*left:63px;*/
+	bottom: 52px;
+	border:#ECEFF1 solid 3px;
+	background-color: #37474FAA;
+}
+#snsWriteTbl textarea {
+	color:#ECEFF1; 
+	font-size: 15pt;
+	width: 350px;
+	height: 150px;
+	background-color: transparent;
+	border:none;
+	padding: 7px;
+}
+#snsSearchTbl{
+	position: fixed;
+	/*left:125px;*/
+	left:900px;
+	bottom: 52px;
+	border:#ECEFF1 solid 3px;
+	background-color: #37474FAA;
+}
+#snsSearchTbl .boxType {
+	color:#ECEFF1; 
+	font-size: 15pt;
+	width: 350px;
+	background-color: transparent;
+	border:none;
+	padding: 7px;
+}
+.aSNSMsg{
+	width: 90%;
+	background-color: #37474FAA;
+	margin-bottom: 30px;
+}
+.aSNSPhoto{
+	width: 120px;
+	padding: 10px;
+}
+.aSNSPhoto img{
+	max-width: 110px;
+	border-radius: 7px;
+}
+.aSNSOwner{
+	font-family: "golmokgil";
+	font-size: 15pt;
+	font-weight: 900;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 1px #ECEFF1; 
+}
+.aSNSDate{
+	font-size: 11pt;
+	padding-right: 10px;
+	color:#ECEFF1; 
+	font-family: "golmokgil";
+}
+.aSNSTxt{
+	font-family: "golmokgil";
+	font-size: 12pt;
+	padding: 12px;
+	color:#ECEFF1; 
+}
+.aSNSMsg button{
+	font-family: "golmokgil";
+	background-color: transparent;
+	border:none;	
+	font-size: 13pt;
+	margin: 10px;
+	font-weight: 900;
+}
+#snsL{
+	position: fixed;
+	height: 100%;
+	width:10px;
+	left:0px;
+	top:0px;
+	cursor: move;
+}
+#snsR{
+	position: fixed;
+	height: 100%;
+	width:10px;
+	right:0px;
+	top:0px;
+	cursor: move;
+}
+#snsL:hover, #snsR:hover{
+	background-color:#ECEFF155; 
+}
+.aSNSReplyArea{
+	font-family: "golmokgil";
+	font-size: 11pt;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom:10px;
+	color:#ECEFF1; 
+}
+.aSNSReply{
+	margin-bottom: 5px;
+}
+.aSNSReplyArea input{
+	background-color: transparent;
+	color:#ECEFF1; 
+	font-family: "golmokgil";
+	font-size: 11pt;
+	color:#ECEFF1; 
+	width: 75%;
+	margin-left: 5px;
+	border:none;
+}
+.aSNSLine{
+	width: 90%;
+	height: 2px;
+}
+.aSNSReplyArea button{
+	font-size: 11pt;
+}

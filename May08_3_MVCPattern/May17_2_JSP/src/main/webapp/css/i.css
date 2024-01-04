@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+table{
+	box-shadow: 3px 3px 3px #42A5F5;
+}
+input{
+	width: 300px;	height:40px;	margin:10px;
+	border:#42A5F5 solid 3px;		text-align: center;
+}
+button{
+	width: 300px;	font-size: 15pt; margin:10px;
+	border:none;	background-color: transparent;
+	color:#42A5F5;	font-weight: 900;
+}

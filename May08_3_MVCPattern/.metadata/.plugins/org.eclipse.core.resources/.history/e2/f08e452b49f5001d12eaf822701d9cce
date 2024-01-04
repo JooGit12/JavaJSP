@@ -1,0 +1,50 @@
+<%@page import="java.util.HashMap"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	double n = Double.parseDouble(request.getParameter("no"));
+	String w = request.getParameter("what");
+
+	HashMap<String, String[]> hm = new HashMap();
+	
+	double result = n * 0.621371;
+	String from = "km/h";
+	String to = "mi/h";
+	if (w.equals("len")) {
+		result = n * 0.393701;
+		from = "cm";
+		to = "inch";
+	} else if (w.equals("size")) {
+		result = n * 0.3025;
+		from = "㎡";
+		to = "평";
+	} else if (w.equals("temp")) {
+		result = (n * (9 / 5)) + 32;
+		from = "℃";
+		to = "℉";
+	}
+	%>
+
+	<%=String.format("%.1f", n) %> <%=from %><br> 
+	↓<br>
+	<%=String.format("%.1f", result) %> <%=to %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

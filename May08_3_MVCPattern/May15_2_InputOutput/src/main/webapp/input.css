@@ -1,0 +1,75 @@
+@charset "EUC-KR";
+
+table {
+	width: 300px;
+	box-shadow: 3px 3px 3px #4E342E;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0px;
+}
+
+th {
+	background-color: #4E342E;
+	color: white;
+	font-size: 20pt;
+	height: 55px;
+}
+
+.td1 {
+	width: 50px;
+}
+
+.boxType {
+	border: none;
+	border-bottom:#4E342E solid 2px;
+	width: 85%;	height: 35px;
+	margin: 10px;
+	text-align: center;
+	outline: none; /* 선택시 기본효과 */
+}
+
+.boxType:focus{
+	border-bottom: red solid 2px;
+}
+
+.boxType::placeholder{
+	color:#4E342E;
+}
+
+.btnType{
+	border:none;
+	background-color: transparent;
+	margin: 10px;
+	font-size: 15pt;	color:#4E342E;
+	font-weight: 900;	cursor:pointer;
+}
+
+select{
+	border: none;
+	border-bottom:#4E342E solid 2px;
+	width: 85%;	
+	margin: 10px;
+	outline:none;
+}
+textarea{
+	border:#4E342E solid 2px;
+	width: 85%;		height:100px;	
+	margin: 10px;	outline:none;
+	resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

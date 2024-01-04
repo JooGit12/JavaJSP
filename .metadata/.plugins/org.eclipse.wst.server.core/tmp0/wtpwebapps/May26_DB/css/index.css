@@ -1,0 +1,42 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: "ha";	src: url("hahaha.ttf");
+}
+a{
+	text-decoration: none;
+}
+body{
+	margin: 0px;	padding: 0px;	font-family: "ha";
+}
+table{
+	border-spacing: 0px;
+}
+#siteTitleArea{
+	position: fixed;	width:100%;		background-color: #FFFFFF99;
+}
+#siteTitleArea table{
+	width: 1200px;
+}
+#siteTitle{
+	height: 100px;		color:#00ACC1;		font-size: 40pt;	
+	font-weight: 900;	padding-left: 20px;
+}
+#siteMenu{
+	border-top:#00ACC1 solid 2px;	border-bottom:#00ACC1 solid 2px;
+	height: 40px;					background-color: #00ACC122;
+}
+#siteMenu a{
+	color:black;		margin-left: 10px;	font-size: 15pt;
+}
+#siteContentArea{
+	margin-left: auto;	margin-right: auto;	width: 1200px;
+	padding-top: 170px;
+}
+#homeTxt{
+	font-size: 150pt;	color:#00ACC1;
+}
+#resultArea{
+	position: fixed;	color:#00ACC1;
+	right:150px;		top:75px;
+	font-weight: 900;
+}

@@ -1,0 +1,143 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: "americano";
+	src: url("americano.ttf");
+}
+@font-face{
+	font-family: "golmokgil";
+	src: url("golmokgil.ttf");
+}
+::-webkit-scrollbar{
+	display: none;
+}
+::placeholder{
+	color:#ECEFF188;
+}
+a{
+	text-decoration: none;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../img/back.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+}
+button{
+	cursor: pointer;
+}
+table{
+	border-spacing: 0px;
+}
+input, textarea, button, select{
+	outline:none;
+}
+input, textarea, select {
+	font-family: "golmokgil";
+}
+textarea{
+	resize: none;
+}
+#siteTitleArea{
+	position: fixed;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+#siteTitleArea table{
+	width: 1200px;
+	height: 130px;
+}
+#siteTitleArea a{
+	font-family:"americano";
+	color:#37474F;
+	text-shadow: 3px 3px 3px #ECEFF1;
+	font-size: 18pt;
+	font-weight: 900;
+}
+.bigTitle{
+	font-size: 25pt;
+	color: #ECEFF1;
+	text-shadow: 3px 3px 3px #37474F;
+}
+#v{
+	font-size: 14pt;
+	color: #ECEFF1;
+	text-shadow: 3px 3px 3px #37474F;
+}
+#siteContentArea{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-top: 130px;
+	padding-bottom: 90px;
+}
+#siteMenuArea{
+	position: fixed;
+	width:100%;
+	bottom: 0px;
+	left: 0px;
+	background-color: #263238BB;
+}
+#startBtn{
+	width:60px;
+	height: 50px;
+	cursor:pointer;
+	border-right: #ECEFF1 solid 2px;
+}
+#startBtn img{
+	width: 40px;
+}
+#startBtn img:hover{
+	width: 37px;
+}
+#siteMenuArea2{
+	position: fixed;
+	width:300px;
+	bottom: 52px;
+	left: 0px;
+	background-color: #263238BB;
+	color: #ECEFF1;
+	font-family: "americano";
+	font-size: 13pt;
+}
+#siteMenuArea2 .menuTr{
+	cursor:pointer;
+}
+#siteMenuArea2 .menuTr:hover{
+	background-color: #263238EE; 
+}
+#siteMenuArea2 .td1{
+	width: 60px;
+	height: 60px;
+}
+#siteMenuArea2 .td2{
+	padding-left: 10px;
+}
+#result{
+	font-family: "golmokgil";
+	color: #ECEFF1;
+	font-size: 12pt;
+	height: 30px;
+	text-shadow: 2px 2px 2px #37474F;
+}
+#mainMenuArea td{
+	width: 40px;
+}
+.subMenuBtn{
+	width: 40px;
+	cursor: pointer;
+}
+.subMenuBtn:hover{
+	width:37px;
+}
+.subMenus{
+	float: left;
+	border-right: #ECEFF1 solid 2px;
+}
+.subMenuIcon{
+	width: 30px;
+	margin: 7px;
+}

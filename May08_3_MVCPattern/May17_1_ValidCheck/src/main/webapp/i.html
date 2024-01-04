@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check() {
+		// document : 이 HTML
+		var idInput = document.f.idd; // document.form이름.input이름
+		var pwInput = document.f.pw;
+		var pwChkInput = document.f.pwChk;
+		var ageInput = document.f.age;
+
+		if (!idInput.value) { // 안썼으면
+			alert("id는 필수");
+			idInput.focus();
+			return false;
+		}
+		if (idInput.value.length < 5) { // 글자수
+			alert("id는 5자 이상");
+			idInput.value = "";
+			idInput.focus();
+			return false;
+		}
+		// 한글못쓰게 : 기술적으로는 문제없는데
+		//				한글 허용해놓으면 개발자 할일이 폭증
+		// 중복
+		
+		if (!pwInput.value) {
+			alert("pw필수");
+			pwInput.focus();
+			return false;
+		}
+		if (pwInput.value.length < 5) {
+			alert("pw최소 5자 이상");
+			pwInput.value = "";			pwChkInput.value = "";
+			pwInput.focus();
+			return false;
+		}
+		if (pwInput.value != pwChkInput.value) { // pw, pw확인 다르면
+			alert("pw확인");
+			pwInput.value = "";			
+			pwChkInput.value = "";
+			pwInput.focus();
+			return false;
+		}
+		// 조합
+		if (!ageInput.value) {
+			alert("나이필수");
+			ageInput.focus();
+			return false;
+		}
+		if (isNaN(ageInput.value)) { // 숫자가 아닌 불순물이 있나
+			alert("나이에는 숫자만");
+			ageInput.value = "";
+			ageInput.focus();
+			return false;
+		}
+		
+		// 비번에 숫자 하나 이상, 특수문자 하나 이상
+		var no = "1234567890";
+		var noOK = false;
+		for (var i = 0; i < no.length; i++) {
+			if (pwInput.value.indexOf(no[i]) != -1) {
+				noOK = true;
+				break;
+			}
+		}
+		
+		var s = "!@#$%^&*()-=\\";
+		var sOK = false;
+		for (var i = 0; i < s.length; i++) {
+			if (pwInput.value.indexOf(s[i]) != -1) {
+				sOK = true;
+				break;
+			}
+		}
+		
+		if (!noOK || !sOK) {
+			alert("비번조합?");
+			pwInput.value = "";		pwChkInput.value = "";
+			pwInput.focus();			
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body>
+	<form name="f" action="AAA" onsubmit="return check();">
+		id : <input name="idd" maxlength="10" autofocus="autofocus"><br>
+		pw : <input name="pw" maxlength="10" type="password"><br>
+		pw확인 : <input name="pwChk" maxlength="10" type="password"><br>
+		나이 : <input name="age" maxlength="3"><br>
+		<button>가입</button>		
+	</form> 
+	<!-- onsubmit : 요청출발하려고할때 -->
+	<!-- 
+		어제 : 잘못써도 일단 서블릿으로 가서,
+			서블릿에서 try/if...
+		-> 잘못썼으면 서블릿으로 가지도 말자
+	 -->
+</body>
+</html>
+
+

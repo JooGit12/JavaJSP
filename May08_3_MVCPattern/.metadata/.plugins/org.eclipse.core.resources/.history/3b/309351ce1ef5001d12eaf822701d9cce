@@ -1,0 +1,54 @@
+package aSd;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/ASD")
+public class ASD extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	private int getRandom() {
+		Random r = new Random();
+		return r.nextInt(10);
+	}
+       
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter pw = response.getWriter();
+		pw.print("<body>");
+		int a = 10;
+		int b = getRandom();
+		pw.print("<h1>");
+		pw.print(a);
+		pw.print("</h1>");
+		pw.print("<h1>");
+		pw.print(b);
+		pw.print("</h1>");
+		if (b % 2 == 1) {
+			pw.print("<h1>홀수</h1>");
+		} else {
+			pw.print("<h2>짝수</h2>");
+		}
+		
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter pw = response.getWriter();
+		pw.print("<body>");
+		int a = 10;
+		int b = getRandom();
+		pw.print("<h1>");
+		pw.print(a);
+		pw.print("</h1>");
+		pw.print("<h1>");
+		pw.print(b);
+		pw.print("</h1>");
+	}
+}
